@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap");
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    color: #ededed;
+    background: #0a0a0a;
+    font-family: "Manrope", sans-serif;
+}
+
+.sequence-sheet {
+    width: min(100% - 36px, 1200px);
+    margin: 0 auto;
+    padding: 42px 0 64px;
+}
+
+header {
+    padding: clamp(24px, 6vw, 52px) 0 27px;
+    border-bottom: 1px solid #10b981;
+}
+
+.eyebrow {
+    margin: 0 0 14px;
+    color: #10b981;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    font: 700 clamp(3rem, 8vw, 5.4rem)/.95 "Manrope", sans-serif;
+    letter-spacing: -.04em;
+}
+
+.note { margin: 14px 0 0; color: #a4a4a4; }
+
+#display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 225px), 1fr));
+    border-left: 1px solid #303030;
+}
+
+#display p {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+    padding: 12px 14px !important;
+    border-right: 1px solid #303030;
+    border-bottom: 1px solid #303030;
+    background: #111;
+    color: #ededed !important;
+    font: .78rem "Fira Code", monospace;
+    font-variant-numeric: tabular-nums;
+}
+
+#display p:nth-child(3n) { color: #10b981 !important; }
+#display p:nth-child(5n) { color: #ededed !important; }
